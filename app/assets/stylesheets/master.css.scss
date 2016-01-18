@@ -7,6 +7,26 @@ body {
   font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
 }
 
+.alert {
+  margin: 0;
+  text-align: center;
+}
+
+.boxy-box {
+  margin-top: 20px;
+  -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  box-shadow: 1px 1px 2px 0 #d0d0d0;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  padding: 10px;
+}
+
+.boxy-box h2, .boxy-box h1 {
+  margin: 10px;
+}
+
 .btn {
   border-radius: 0;
 }
