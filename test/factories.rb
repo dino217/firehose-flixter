@@ -1,5 +1,8 @@
-FactoryGirl.define do  factory :section do
-    
+FactoryGirl.define do
+
+  factory :section do
+    title "First Week"
+    course
   end
 
   factory :course do
