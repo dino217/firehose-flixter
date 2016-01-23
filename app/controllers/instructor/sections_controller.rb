@@ -9,9 +9,12 @@ class Instructor::SectionsController < ApplicationController
 
   def create
     @course = Course.find(params[:course_id])
-    @section = @course.sections.create(section_params)
-
-    redirect_to instructor_course_path(@course)
+    @section = @course.sections.build(section_params)
+    if @section.save
+      redirect_to instructor_course_path(@course)
+    else
+      render text: "Could not be created"
+    end
   end
 
   private
