@@ -1,4 +1,7 @@
-FactoryGirl.define do
+FactoryGirl.define do  factory :lesson do
+    
+  end
+
 
   factory :section do
     title "First Week"
