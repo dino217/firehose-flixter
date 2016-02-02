@@ -40,7 +40,7 @@
               </li>
             <% else %>
               <li><%= link_to 'Sign Up', new_user_registration_path %></li>
-              <li><%= link_to 'Sign In', new_user_session_path %></li>              
+              <li><%= link_to 'Sign In', new_user_session_path %></li>
             <% end %>
           </ul>
         </div><!-- /.navbar-collapse -->
@@ -61,10 +61,42 @@
 
   <div id="footer">
     <div class="container">
-      <b>Teachers</b>
-      <br />
-      <%= link_to 'Teach a Course', new_instructor_course_path %>
-    </div>
+      <div class="col-xs-12 col-sm-3">
+        <b>Teachers</b>
+        <br />
+        <%= link_to 'Teach a Course', new_instructor_course_path %>
+        <br />
+        <%= link_to 'My Dashboard', dashboard_path %>
+      </div>
+      <div class="col-xs-12 col-sm-3">
+        <b>About</b>
+        <br />
+        <%= link_to 'Team', '#' %>
+        <br />
+        <%= link_to 'Careers', '#' %>
+        <br />
+        <%= link_to 'Privacy Policy', '#' %>
+      </div>
+      <div class="col-xs-12 col-sm-3">
+        <b>Contact</b>
+        <br />
+        registrar@dharma-college.com
+        <br />
+        2222 Harold Way
+        <br />
+        Berkeley, CA 94704
+      </div>
+      <div class="col-xs-12 col-sm-3 social">
+        <b>Social</b>
+        <br />
+        <br />
+        <%= link_to 'http://github.com/dino217' do %>
+          <%= image_tag 'github.png', class: 'social-button' %>
+        <% end %>
+        <%= link_to 'https://plus.google.com/113989940811105274592' do %>
+          <%= image_tag 'googleplus.png', class: 'social-button' %>
+        <% end %>
+      </div>
   </div>
 </body>
 </html>
